@@ -11,16 +11,17 @@
 -b 1500000                                               `#use a bitrate of 1,500Kbps` \
 `#pipe the output to ffmpeg` \
 | /usr/bin/ffmpeg \
+`#silent audio input settings (youtube requires an audiotrack)` \
 -re                                                      `#read audio input at native frame rate` \
 -ar 44100                                                `#use an input audio sampling frequency of 44,100Hz` \
 -ac 2                                                    `#use 2 input audio channels for stereo` \
 -acodec pcm_s16le                                        `#use the pcm_s16le for the input audio codec` \
 -f s16le                                                 `#force the input audio file format to s16le` \
 -i /dev/zero                                             `#input audio from /dev/zero, so just and endless stream of nulls` \
-\
+`#video input settings` \
 -f h264                                                  `#input video format h264` \
 -i -                                                     `#input video from stdin` \
-\
+`#output settings` \
 -vcodec copy                                             `#output using the input video's codec` \
 -acodec aac                                              `#output using the aac audio codec` \
 -ab 128k                                                 `#output using audio bitrate of 128k` \
