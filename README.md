@@ -1,6 +1,10 @@
 # FishyPi
 Simple live stream from Pi to Youtube.
 
+At the time of writing, this is streaming here:
+
+[![https://www.youtube.com/watch?v=PSfd0EOY2fA](https://img.youtube.com/vi/PSfd0EOY2fA/0.jpg)](https://www.youtube.com/watch?v=PSfd0EOY2fA)
+
 In the scripts, I've split the commands into multiple lines and attempted to explain what each parameter for raspivid and ffmpeg do.  This was mostly for my own benefit but hopefully it's helpful to others too.
 
 ## Setup
