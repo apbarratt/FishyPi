@@ -1,4 +1,3 @@
-# Background audio from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=14428
 # Bitrate settings for YouTube based on recommendations found here: https://support.google.com/youtube/answer/2853702?hl=en-GB#zippy=%2Cp
 
 `#run libcamera-vid`
@@ -15,7 +14,7 @@
 `#audio input settings` \
 -re                                                            `#read audio input at native frame rate` \
 -stream_loop -1                                                `#loop the input audio forever` \
--i audio/underwater.mp3                                        `#input audio from underwater.mp3` \
+-i audio/underwater.wav                                        `#input audio from underwater.mp3` \
 `#video input settings` \
 -f h264                                                        `#input video format h264` \
 -r 30                                                          `#input video at 30 fps` \
