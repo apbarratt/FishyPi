@@ -5,7 +5,7 @@
 -t 0                                                           `#Keep capturing until stopped` \
 --width 1920 --height 1080                                     `#Output 1920x1080 (1080p) video` \
 --inline                                                       `#inline... whatever that means` \
--b 6000000                                                     `#use a bitrate of 6,000Kbps` \
+-b 3000000                                                     `#use a bitrate of 3,000Kbps` \
 --tuning-file /usr/share/libcamera/ipa/raspberrypi/ov5647.json `#use tuning file for my particular camera` \
 --vflip --hflip                                                `#flip horizontally and vertically for upside down camera` \
 --flush                                                        `#flush` \
