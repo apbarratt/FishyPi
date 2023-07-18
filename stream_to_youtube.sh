@@ -7,7 +7,7 @@
 --inline                                                       `#inline... whatever that means` \
 -b 3000000                                                     `#use a bitrate of 3,000Kbps` \
 --tuning-file /usr/share/libcamera/ipa/raspberrypi/ov5647.json `#use tuning file for my particular camera` \
---vflip --hflip                                                `#flip horizontally and vertically for upside down camera` \
+--rotation 180                                                 `#rotate the camera as it is mounted upside down` \
 --flush                                                        `#flush` \
 --nopreview                                                    `#don't try opening a preview window` \
 -o -                                                           `#stream the output to the stdin` \
@@ -33,6 +33,5 @@
 -drop_pkts_on_overflow 1                                       `#drop packets on overflow` \
 -attempt_recovery 1                                            `#attempt recovery` \
 -recovery_wait_time 1                                          `#wait 1 second before attempting recovery` \
-rtmp://a.rtmp.youtube.com/live2/$YOUTUBE_KEY                   `#output it to this YouTube rtmp stream` \
--loglevel error \
--stats
+rtmp://a.rtmp.youtube.com/live2/$YOUTUBE_KEY                   `#output it to this YouTube rtmp stream`
+
